@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int w,a,c;
+    scanf("%d%d%d",&w,&a,&c);
+    int adult_weight=a*75;
+    int children_weight=c*30;
+    if(adult_weight+children_weight<w){
+        printf("Boat is stable");
+    }
+    else{
+        printf("Boat will drown");
+    }
+    
+
+    return 0;
+}
