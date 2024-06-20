@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,bill;
+    scanf("%d",&n);
+    if(n<=200){
+        bill=n*0.5;
+        printf("Rs.%d",bill);
+    }
+    else if(n<=400){
+        bill=n*0.65+100;
+        printf("Rs.%d",bill);
+    }
+    else if(n<=600){
+        bill=n*0.80+200;
+        printf("Rs.%d",bill);
+    }
+    else{
+        bill=n*1.25+425;
+        printf("Rs.%d",bill);
+    }
+
+    return 0;
+}
