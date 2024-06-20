@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,i;
+    scanf("%d%d",&a,&b);
+    int n1[a],n2[b];
+    for(i=0;i<a;i++){
+        scanf("%d",&n1[i]);
+    }
+    for(i=0;i<b;i++){
+        scanf("%d",&n2[i]);
+    }
+    if(a!=b){
+        printf("Not Same");
+    }
+    else{
+        for(i=0;i<a;i++){
+            if(n1[i]!=n2[i]){
+                printf("Not Same");
+                break;
+            }
+        }
+        if(i==a){
+            printf("Same");
+        }
+    }
+    
+         
+    
+    return 0;
+}
