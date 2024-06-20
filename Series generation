@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int i=7;
+    int j=5;
+    int count=1,flag=0;
+    while(count<=n){
+        if(flag==0){
+            printf("%d ",i);
+            flag=1;
+        }
+        else{
+            printf("%d ",j);
+            flag=0;
+            i++;
+            j++;
+        }
+        count++;
+    }
+    return 0;
+}
