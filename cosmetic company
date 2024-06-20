@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,r1,min;
+    scanf("%d",&n);
+    min=10;
+    while(n!=0){
+        r1=n%10;
+        if(r1<min){
+            min=r1;
+        } 
+        n=n/10;
+    }
+    printf("%d",min);
+    return 0;
+}
