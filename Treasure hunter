@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    int ben=a*b/100;
+    printf("%d\n",ben);
+    int black=(a-ben)*c/100;
+    printf("%d\n",black);
+    int pirates=(a-ben-black)/3;
+    printf("%d",pirates);
+    
+
+    return 0;
+}
