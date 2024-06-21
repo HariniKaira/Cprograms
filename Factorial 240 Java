@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int sum=(n-1)%9+1;
+        long fact=1;
+        for(int i=1;i<=sum;i++){
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
