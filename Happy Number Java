@@ -1,0 +1,27 @@
+class Solution {
+    public int Squares(int n){
+        int sum=0;
+        while(n!=0){
+            int r=n%10;
+            sum=sum+(r*r);
+            n=n/10;
+        }
+        return sum;
+
+    }
+    public boolean isHappy(int n) {
+        int fast=n;
+        int slow=n;
+        do{
+            fast=Squares(Squares(fast));
+            slow=Squares(slow);
+        }
+        while(fast!=slow);
+        if(fast==1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
